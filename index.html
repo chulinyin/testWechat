@@ -15,7 +15,7 @@
   <meta http-equiv="Cache" content="no-cache">
   <title></title>
   <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.css?v=3">
 </head>
 
 <body>
@@ -107,17 +107,22 @@
         <Button class="download_btn">
           <a href="itms-services://?action=download-manifest&url=https://rec.app.830114.com/1848-1539607448.plist">下载安装</a>
         </Button>
-        <div class="downloaded_tip">
-          <p class="loading_tip">正在安装，请回到桌面查看</p>
-          <Button class="trust_btn">
-            <a href="./app.mobileprovision">立即信任</a>
-          </Button>
+        <div class="downloaded_tip_wrapper">
+          <div class="downloaded_tip">
+            <p class="loading_tip">
+              <img src="./loading.gif" class="icon_loading"> 
+              <span>正在安装，请回到桌面查看</span>
+            </p>
+            <Button class="trust_btn">
+              <a href="./app.mobileprovision">立即信任</a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./index.js?v=2"></script>
+  <script src="./index.js?v=3"></script>
 </body>
 
 </html>

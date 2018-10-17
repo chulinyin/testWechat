@@ -13,7 +13,7 @@ body {
   background-color: #fff;
 }
 
-#wechat, #web, #android, #ios, .downloaded_tip {
+#wechat, #web, #android, #ios, .downloaded_tip_wrapper {
   display: none;
 }
 
@@ -58,11 +58,24 @@ body {
   color: #fff;
 }
 
-.loading_tip {
+.downloaded_tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.downloaded_tip .loading_tip {
+  display: flex;
+  align-items: center;
   margin-top: .6rem;
   font-size: .32rem;
   font-weight: bold;
   color: #32b2a7;
+}
+
+.downloaded_tip .icon_loading {
+  width: .58rem;
+  height: .58rem;
 }
 
 /* pc web */

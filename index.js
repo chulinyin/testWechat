@@ -11,7 +11,7 @@ $(function() {
     $ios: $('#ios'),
     $wechatTipBrowser: $('.wechat_tip_browser'),
     $iosDownloadBtn: $('#ios .download_btn'),
-    $iosDownloadedTip: $('#ios .downloaded_tip')
+    $iosDownloadedTip: $('#ios .downloaded_tip_wrapper')
   };
 
   var Page = {
