@@ -1,13 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no,email=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <title></title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-  <a href="itms-services://?action=download-manifest&url=https://rec.app.830114.com/1848-1539607448.plist">跳转</a>
-  <a href="./app.mobileprovision">立即信任</a>
+  <div id="app">
+    <!-- 微信内 -->
+    <div id="wechat">
+      <div class="wechat_tip_wrapper">
+        <div class="wechat_tip">
+          <i class="triangle-up"></i>
+          <p>
+            请点击右上角<br>
+            在<span class="wechat_tip_browser">Safari</span>中打开
+          </p>
+        </div>
+      </div>
+      <div class="app_info_wrapper">
+        <img class="logo" src="https://rec.app.830114.com/1848-1539607448.png?v=1539683568">
+        <p class="name">微贷钱包</p>
+        <div class="hairline"></div>
+        <!-- 构建信息 -->
+        <p class="buid_info">
+          <span class="version">1.0.2</span>
+          (Build<span class="Build">1</span>)
+          -<span class="size">10.8MB</span>
+        </p>
+        <!-- 更新信息 -->
+        <p class="update_info">
+          更新于：<span class="update_time">2018-10-15 20:44:40</span>
+        </p>
+        <Button class="download_btn" disabled>不支持在微信内下载安装</Button>
+      </div>
+    </div>
+    <!-- pc浏览器 -->
+    <div id="web">
+      <div class="app_info_wrapper">
+        <img src="http://cdn.bxgsft.cn/source/pack/weixin/qrcode.php?link=http://cdn.bxgsft.cn/appp.php/2847" class="qrcode">
+        <div class="name_wrapper">
+          <img src="https://rec.app.830114.com/1848-1539607448.png?v=1539683568" alt="" class="logo">
+          <span class="name">微贷钱包</span>
+        </div>
+        <div class="hairline"></div>
+        <p class="build-info">
+          <span class="version">1.0.2</span>
+          (Build<span class="Build">1</span>)
+          -<span class="size">10.8MB</span>
+        </p>
+        <p class="update-info">
+          更新于：<span class="update-time">2018-10-15 20:44:40</span>
+        </p>
+      </div>
+    </div>
+    <!-- 安卓手机浏览器 -->
+    <div id="android">
+      <div class="app_info_wrapper">
+        <img class="logo" src="https://rec.app.830114.com/1848-1539607448.png?v=1539683568">
+        <p class="name">微贷钱包</p>
+        <div class="hairline"></div>
+        <!-- 构建信息 -->
+        <p class="buid_info">
+          <span class="version">1.0.2</span>
+          (Build<span class="Build">1</span>)
+          -<span class="size">10.8MB</span>
+        </p>
+        <!-- 更新信息 -->
+        <p class="update_info">
+          更新于：<span class="update_time">2018-10-15 20:44:40</span>
+        </p>
+        <Button class="download_btn">
+          <a href="http://cdn.bxgsft.cn/data/attachment/1838-1539684741.apk">下载安装</a>
+        </Button>
+      </div>
+    </div>
+    <!-- ios手机浏览器 -->
+    <div id="ios">
+      <div class="app_info_wrapper">
+        <img class="logo" src="https://rec.app.830114.com/1848-1539607448.png?v=1539683568">
+        <p class="name">微贷钱包</p>
+        <div class="hairline"></div>
+        <!-- 构建信息 -->
+        <p class="buid_info">
+          <span class="version">1.0.2</span>
+          (Build<span class="Build">1</span>)
+          -<span class="size">10.8MB</span>
+        </p>
+        <!-- 更新信息 -->
+        <p class="update_info">
+          更新于：<span class="update_time">2018-10-15 20:44:40</span>
+        </p>
+        <Button class="download_btn">
+          <a href="itms-services://?action=download-manifest&url=https://rec.app.830114.com/1848-1539607448.plist">下载安装</a>
+        </Button>
+        <div class="downloaded_tip">
+          <p class="loading_tip">正在安装，请回到桌面查看</p>
+          <Button class="trust_btn">
+            <a href="./app.mobileprovision">立即信任</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </body>
+
 </html>

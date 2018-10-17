@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+input,button { outline: 0; border: 0; }
+.clearfix::after {
+  display: block;
+  content: '.';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  font-weight: 200;
+  color:#999;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-weight: 200;
+  color:#999;
+  opacity: 1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-weight: 200;
+  color:#999;
+  opacity: 1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-weight: 200;
+  color:#999;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+a[title="站长统计"] {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  /* background: linear-gradient(180deg, #fff 20%, #f58a58, #f16566); */
+}
+
+
+/* 网易 viewport */
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 0.42667rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  html {
+    font-size: 0.48rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+  html {
+    font-size: 0.5rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 393px) {
+  html {
+    font-size: 0.524rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 394px) and (max-width: 412px) {
+  html {
+    font-size: 0.5493rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+  html {
+    font-size: 0.552rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 480px) {
+  html {
+    font-size: 0.64rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+  html {
+    font-size: 0.72rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 640px) {
+  html {
+    font-size: 0.8533rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 720px) {
+  html {
+    font-size: 0.96rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 768px) {
+  html {
+    font-size: 1.024rem;
+    font-size: calc(13.33333333vw);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 1.024rem;
+    font-size: calc(13.33333333vw);
+  }
+}
