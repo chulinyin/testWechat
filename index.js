@@ -29,7 +29,7 @@ $(function() {
       }
     },
     listen: function () {
-      UI.$iosDownloadBtn.on('click', function() {
+      UI.$iosDownloadBtn.on('click', 'a', function() {
         UI.$iosDownloadBtn.hide()
         UI.$iosDownloadedTip.show()
       })
