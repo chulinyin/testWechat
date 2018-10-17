@@ -16,7 +16,7 @@ $(function() {
 
   var Page = {
     init: function () {
-      // Page.listen()
+      Page.listen()
 
       if(isWeChat) {
         Page.renderWeChat()
